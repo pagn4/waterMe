@@ -3,16 +3,26 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/icons8_home_96"
+        android:onClick="navigationMenuNextActivity"
         android:title="Namai" />
 
     <item
         android:id="@+id/nav_out"
         android:icon="@drawable/icons8_oak_tree_96"
+        android:onClick="navigationMenuNextActivity"
         android:title="Laukas" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/icons8_information_96"
+        android:onClick="navigationMenuNextActivity"
+        android:title="Info"
+        android:visible="true" />
+
 
     <item
         android:id="@+id/nav_settings"
         android:icon="@drawable/icons8_settings_96"
+        android:onClick="navigationMenuNextActivity"
         android:title="Perametrai" />
 
 </menu>
