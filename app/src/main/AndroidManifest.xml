@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaterMe">
         <activity
-            android:name=".settings"
+            android:name=".infoActivity"
             android:exported="false" />
         <activity
-            android:name=".out"
+            android:name=".outActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
