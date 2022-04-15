@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/icons8_home_96"
+        android:icon="@drawable/icons8_home_144"
         android:onClick="navigationMenuNextActivity"
         android:title="Namai"
         app:showAsAction="ifRoom" />
@@ -16,7 +16,7 @@
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/nav_info"
-        android:icon="@drawable/icons8_information_96"
+        android:icon="@drawable/icons8_information_100__1_"
         android:onClick="navigationMenuNextActivity"
         android:title="Info"
         app:showAsAction="ifRoom" />

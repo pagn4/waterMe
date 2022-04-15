@@ -8,14 +8,20 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class infoActivity extends AppCompatActivity {
 
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+        this.setTitle("Informacija");
+
+        listView = (ListView) findViewById(R.id.listView);
+
     }
 
 
