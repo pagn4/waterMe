@@ -17,7 +17,7 @@
         android:clickable="true"
         android:onClick="openDialog"
         android:tint="#FFFFFF"
-        app:backgroundTint="#6200ed"
+        app:backgroundTint="#63a230"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:rippleColor="#FFFFFF"
@@ -25,7 +25,14 @@
         android:layout_marginEnd="15dp"
         android:focusable="true" />
 
-
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

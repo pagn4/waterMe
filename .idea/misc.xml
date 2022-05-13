@@ -8,8 +8,10 @@
         <entry key="app/src/main/res/layout/activity_out.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.23641304347826086" />
         <entry key="app/src/main/res/layout/add.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/for_list.xml" value="0.2994791666666667" />
         <entry key="app/src/main/res/layout/fragment_fragement_out.xml" value="0.2740036231884058" />
         <entry key="app/src/main/res/layout/header.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/list.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.2953125" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.33" />
       </map>
@@ -20,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>
