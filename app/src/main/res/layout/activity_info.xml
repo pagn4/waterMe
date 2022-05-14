@@ -4,17 +4,791 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#efefcd"
+    android:scrollbars="horizontal|vertical"
     tools:context=".infoActivity">
 
-
-        <ListView
-            android:id="@+id/listView"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a1" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Plaukuotasis adiantas. Jis mėgsta daug vandens ir rekomeduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas. "
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a1">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Lizdinė kalnarūtė. Vidutiniškai - gausiai laistyti. Patinka Netiesioginiai saulės spinduliai, vidutinis apšvietimas/Pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a2">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a3" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Unksmenė. Patariama vidutiniškai - gausiai laistyti. Tinka Netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a3">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a4" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Areka. Vandens reikia vidutiniškai. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a5"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a4">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Riešutinė kokospalmė. Laistyti vidutiniškai. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a6"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a5">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a6" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Paprastoji Vašingtonija. Reikia gausiai laistyti. Rekomenduojami Netiesioginiai saulės spinduliai, vidutinis apšvietimas arba kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a7"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a6">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a7" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Ktenantė. Vidutiniškai arba gausiai laistyti. Geriausiai yra netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a8"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a7">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a8" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Baltagyslė maranta. Vidutiniškai laistyti, galima ir gausiai. Tinka netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a9"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a8">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a9" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Stromantė. Vidutiniškai arba gausiai laistyti. Tinka netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a10"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a9">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a10" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Alokasija. Laistyiti gausiai. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas tinka ir pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a11"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a10">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a11" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Dvispalvis kaladis. Gausiai laistyti. Reikalingi netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a12"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a11">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a12" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Nuostabioji monstera. Vidutiniškai laistyti. Netiesioginiai saulės spinduliai, vidutinis apšvietimas, tinka ir pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a13"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a12">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a13" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Smulkialapis fikusas. Saikingai laistyti. Netiesioginiai saulės spinduliai, vidutinis apšvietimas, tinka ir pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a14"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a13">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a14" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Skiautėtalapis Fikusas -Figmedis. Gausiai laistyti. Reikalinga kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a15"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a14">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Stambialapis fikusas. Vidutiniškai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas arba pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a16"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a15">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a16" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Karališkoji begonija. Vidutiniškai laistyti. Reikalingi netiesioginiai saulės spinduliai, vidutinis apšvietimas/kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a17"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a16">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a17" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Raibasis krotonas. Gausiai laistyti. Reikalinga kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a18"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a17">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a18" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Pachira. Gausiai laistyti. Gausiai laistyti. Reikalinga kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a19"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a18">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a19" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Gebenė lipikė. Vidutiniškai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas arba pavėsis."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a20"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a19">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a20" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Šeflera. Saikingai laistyti. Reikalingi netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a21"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a20">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a21" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Japoninė fatisija. Vidutiniškai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a22"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a21">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a22" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Kuokštinis chlorofitas. Vidutiniškai laistyti. Reikalingi netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a23"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a22">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a23" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Skindapas. Saikingai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas"
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a24"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a23">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a24" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Rombiškasis lamstas. Saikingai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a25"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a24">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a25" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Anturis. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a26"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a25">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a26" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Iksora. Gausiai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a27"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a26">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a27" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Narcizas. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a28"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a27">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a28" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Cimbidis. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a29"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a28">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a29" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Raibuolė. Vidutiniškai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a30"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a29">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a30" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Karališkoji orchidėja. Saikingai arba vidutiniškai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/a31"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a30">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a31" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Opuntija. Saikingai arba vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a32"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a31">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a32" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Parodija. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a33"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a32">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a33" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Stulpenis. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a34"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a33">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a34" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Puošniausioji karpažolė. Saikingai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/a35"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a34">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a35" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Tribriaunė karpažolė. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a36"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a35">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a36" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Dygliuotoji karpažolė. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/a37"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a36">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a37" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Vaškuolė. Gausiai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a38"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a37">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a38" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Agava. Vidutiniškai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a39"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a38">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a39" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Echeverija. Saikingai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a40"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a39">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a40" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Ąsotenis. Saikingai laistyti. Rekomenduojami netiesioginiai saulės spinduliai, vidutinis apšvietimas."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a41"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a40">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a41" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Saracėnija. Saikingai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/a42"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/a41">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/a42" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="138dp"
+                                    android:padding="10sp"
+                                    android:text="Jautrusis musėkautas. Gausiai laistyti. Rekomenduojama kuo šviesesnė aplinka, ne visada tiesioginiai saulės spinduliai."
+                                    android:textColor="@color/black" />
+                        </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
 
 
 </RelativeLayout>

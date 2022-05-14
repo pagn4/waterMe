@@ -4,55 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#efefcd"
     tools:context=".outActivity">
-
-    <WebView
-        android:id="@+id/web"
-        android:layout_width="400dp"
-        android:layout_height="942dp"
-        android:layout_marginBottom="244dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="130dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="220dp"
         android:text="Paskutinį kartą laistyta prieš:"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="176dp"
+        android:clickable="true"
+        android:onClick="itHasBeenWatered"
+        android:text="Palaisčiau"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/days"
         android:layout_width="114dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="220dp"
+        android:background="#efefcd"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintHorizontal_bias="0.973"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:clickable="true"
-        android:onClick="itHasBeenWatered"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="90dp"
-        android:text="Palaisčiau"
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="376dp"
+        android:layout_height="945dp"
+        android:layout_marginBottom="370sp"
+        android:backgroundTint="#efefcd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.979"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="OnClick" />
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

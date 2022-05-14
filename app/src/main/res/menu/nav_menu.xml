@@ -3,20 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/icons8_home_144"
+        android:icon="@drawable/house"
         android:onClick="navigationMenuNextActivity"
         android:title="Namai"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_out"
-        android:icon="@drawable/icons8_oak_tree_96"
+        android:icon="@drawable/tree"
         android:onClick="navigationMenuNextActivity"
         android:title="Laukas"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/nav_info"
-        android:icon="@drawable/icons8_information_100__1_"
+        android:icon="@drawable/info"
         android:onClick="navigationMenuNextActivity"
         android:title="Info"
         app:showAsAction="ifRoom" />

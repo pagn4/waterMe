@@ -11,16 +11,15 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 public class infoActivity extends AppCompatActivity {
 
-    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         this.setTitle("Informacija");
-
-        listView = (ListView) findViewById(R.id.listView);
 
     }
 

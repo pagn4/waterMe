@@ -27,6 +27,9 @@ public class outActivity extends AppCompatActivity {
         WebView webView = (WebView) findViewById(R.id.web);
         webView.loadUrl("https://www.gismeteo.lt/weather-klaip%C4%97da-4157/weekly/");
 
+
+
+        //skaiciuojama ir issaugojama pries kiek dienu buvo laistyti augalai esantys lauke
         Calendar calendar = Calendar.getInstance();
         int currentDay = calendar.get(Calendar.DAY_OF_MONTH);
         SharedPreferences dayL = getSharedPreferences("PREFS",0);
@@ -53,6 +56,7 @@ public class outActivity extends AppCompatActivity {
 
 
     public boolean itHasBeenWatered(View view){
+        //paspaudus mygtuka "palaisciau" dienu skaicius numazinamas iki 0
         TextView textView = (TextView) findViewById(R.id.days);
         textView.setText("0 d.");
         SharedPreferences day = getSharedPreferences("days",0);

@@ -53,9 +53,10 @@ public class popup extends AppCompatDialogFragment {
                     String name = nameT.getText().toString();
                     String species = speciesT.getText().toString();
                     String date = dateT.getText().toString();
+                    String days = daysT.getText().toString();
 
-                    if(!name.equals("") && !species.equals("") && !date.equals("")){
-                        save(name,species,date);
+                    if(!name.equals("") && !species.equals("") && !date.equals("")&& !days.equals("")){
+                        save(name,species,date,days);
                         Toast.makeText(getContext(), "Išsaugota", Toast.LENGTH_SHORT).show();
                         go();
                     }
@@ -69,16 +70,16 @@ public class popup extends AppCompatDialogFragment {
 
     }
 
-    public void save(String name, String species, String date){
+    public void save(String name, String species, String date, String days){
 
         arrList = file.readData(getContext());
         adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, arrList);
-
-        adapter.add(name+'\n'+"Rūšis: "+species+'\n'+"Gimtadienis: "+date);
+        adapter.add(name+'\n'+"Rūšis: "+species+'\n'+"Gimtadienis: "+date+"     Laistymo dažnis: "+days+ " d.");
         file.saving(arrList,getContext());
 
     }
     public void go(){
+        //taip padariau, kad pridejus nauja augala nereiketu perkrauti programeles ir iskarto butu galima matyti
         Intent restart = new Intent(getContext(), MainActivity.class);
         startActivity(restart);
         getActivity().overridePendingTransition(0,0);
