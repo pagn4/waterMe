@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setTitleColor(Color.rgb(239,239,205));
         this.setTitle("Namai");
 
 

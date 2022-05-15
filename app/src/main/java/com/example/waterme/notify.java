@@ -30,7 +30,7 @@ public class notify extends BroadcastReceiver {
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);//getting the pendingIntent
 
         Notification.Builder builder = new Notification.Builder(context);
-        Notification notification = builder.setContentTitle("Priminimas!")
+        Notification notification = builder.setContentTitle("Sveiki!")
                 .setContentText("Kaip laikosi jūsų augalai?")
                 .setTicker("Sveiki!")
                 .setSmallIcon(R.drawable.tree)
